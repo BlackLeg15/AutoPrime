@@ -1,4 +1,4 @@
-package model;
+package model.entidades;
 
 public class Veiculo {
 	private String placa;
@@ -7,20 +7,14 @@ public class Veiculo {
 	private String cor;
 	private String combustivel;
 	private double quilometragem;
-	private String tipoCambio;
-	private String opcionais;
 
-	public Veiculo(String placa, String modelo, int ano, String cor, String combustivel, double quilometragem,
-			String tipoCambio, String opcionais) {
-		super();
+	public Veiculo(String placa, String modelo, int ano, String cor, String combustivel, double quilometragem) {
 		this.placa = placa;
 		this.modelo = modelo;
 		this.ano = ano;
 		this.cor = cor;
 		this.combustivel = combustivel;
 		this.quilometragem = quilometragem;
-		this.tipoCambio = tipoCambio;
-		this.opcionais = opcionais;
 	}
 
 	public String getPlaca() {
@@ -69,22 +63,6 @@ public class Veiculo {
 
 	public void setQuilometragem(double quilometragem) {
 		this.quilometragem = quilometragem;
-	}
-
-	public String getTipoCambio() {
-		return tipoCambio;
-	}
-
-	public void setTipoCambio(String tipoCambio) {
-		this.tipoCambio = tipoCambio;
-	}
-
-	public String getOpcionais() {
-		return opcionais;
-	}
-
-	public void setOpcionais(String opcionais) {
-		this.opcionais = opcionais;
 	}
 	
 }

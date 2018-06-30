@@ -1,4 +1,4 @@
-package model;
+package model.entidades;
 
 public class Pessoa {
 	public int id_Pessoa;

@@ -1,24 +1,24 @@
 package model.entidades;
 
+import java.util.Date;
+
 public class Cliente extends Pessoa {
-	private String aluga;
+	private int numAlugueis;
 	private String cnh;
-	private Empregado cadastrante;
 	
-	public Cliente(String nome, String cpf, String rg, String sexo, byte idade, String endereco, String telefone,
-			String aluga, String cnh, Empregado cadastrante) {
-		super(nome, cpf, rg, sexo, idade, endereco, telefone);
-		this.aluga = aluga;
+	public Cliente(String nome, String cpf, String rg, String sexo, Date dataNascimento, String rua, int numCasa,
+			String bairro, String cidade, String estado, String telefone, int numAlugueis, String cnh) {
+		super(nome, cpf, rg, sexo, dataNascimento, rua, numCasa, bairro, cidade, estado, telefone);
+		this.numAlugueis = numAlugueis;
 		this.cnh = cnh;
-		this.cadastrante = cadastrante;
 	}
 
-	public String getAluga() {
-		return aluga;
+	public int getNumAlugueis() {
+		return numAlugueis;
 	}
 
-	public void setAluga(String aluga) {
-		this.aluga = aluga;
+	public void setNumAlugueis(int numAlugueis) {
+		this.numAlugueis = numAlugueis;
 	}
 
 	public String getCnh() {
@@ -27,14 +27,6 @@ public class Cliente extends Pessoa {
 
 	public void setCnh(String cnh) {
 		this.cnh = cnh;
-	}
-
-	public Empregado getCadastrante() {
-		return cadastrante;
-	}
-
-	public void setCadastrante(Empregado cadastrante) {
-		this.cadastrante = cadastrante;
 	}
 	
 }

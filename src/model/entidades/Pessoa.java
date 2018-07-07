@@ -1,22 +1,33 @@
 package model.entidades;
 
+import java.util.Date;
+
 public class Pessoa {
 	public int id_Pessoa;
 	private String nome;
 	private String cpf;
 	private String rg;
 	private String sexo;
-	private byte idade;
-	private String endereco;
+	private Date dataNascimento;
+	private String rua;
+	private int numCasa;
+	private String bairro;
+	private String cidade;
+	private String estado;
 	private String telefone;
-	
-	public Pessoa(String nome, String cpf, String rg, String sexo, byte idade, String endereco, String telefone) {
+
+	public Pessoa(String nome, String cpf, String rg, String sexo, Date dataNascimento, String rua, int numCasa,
+			String bairro, String cidade, String estado, String telefone) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.rg = rg;
 		this.sexo = sexo;
-		this.idade = idade;
-		this.endereco = endereco;
+		this.dataNascimento = dataNascimento;
+		this.rua = rua;
+		this.numCasa = numCasa;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.estado = estado;
 		this.telefone = telefone;
 	}
 
@@ -52,20 +63,52 @@ public class Pessoa {
 		this.sexo = sexo;
 	}
 
-	public byte getIdade() {
-		return idade;
+	public Date getDataNascimento() {
+		return dataNascimento;
 	}
 
-	public void setIdade(byte idade) {
-		this.idade = idade;
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 
-	public String getEndereco() {
-		return endereco;
+	public String getRua() {
+		return rua;
 	}
 
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+	public void setRua(String rua) {
+		this.rua = rua;
+	}
+
+	public int getNumCasa() {
+		return numCasa;
+	}
+
+	public void setNumCasa(int numCasa) {
+		this.numCasa = numCasa;
+	}
+
+	public String getBairro() {
+		return bairro;
+	}
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+
+	public String getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
 
 	public String getTelefone() {
@@ -75,6 +118,5 @@ public class Pessoa {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	
 	
 }

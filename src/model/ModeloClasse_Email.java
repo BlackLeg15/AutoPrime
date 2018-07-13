@@ -1,4 +1,4 @@
-package model;
+/*package model;
 
 import java.util.Properties;
 import javax.mail.Address;
@@ -88,4 +88,4 @@ public class Email {
 			Alertas.mostraAlertaInfo("O e-mail nÃ£o Ã© reconhecido", "Verifique se o e-mail foi inserido corretamente e tente novamente");
 		}
 	}
-}
+}*/

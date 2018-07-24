@@ -1,0 +1,69 @@
+create table pessoa
+   (id_pessoa int,
+	nome varchar(30),
+	nadaNasc date,
+	sexo varchar(3),
+	rg varchar(20),
+	cpf varchar(20),
+	telefone varchar(20),
+	email varchar(30),
+	rua varchar(30),
+	numCasa int,
+	bairro varchar(30),
+	cidade varchar(30),
+	estado varchar(30),
+    primary key (id_pessoa));
+				 
+create table cliente
+	(CNH varchar(30),
+	id_pessoa int,
+	primary key (id_pessoa),
+	foreign key (id_pessoa) references pessoa);
+				 
+create table funcionario
+	(id_func int,
+	 cargo varchar (30),
+	 salario numeric (5,2),
+	 cargaHorSem int,
+	 dataEntrada date,
+	 primary key(id_func),
+	 foreign key (id_func) references pessoa);
+
+create table carro
+	(id_carro int,
+	placa varchar(20),
+	modelo varchar(20),
+	anoModelo int,
+	cor varchar(20),
+	combustivel float,
+	quilomentragem float,
+	tipoCambio bit,
+	opcionais varchar(30),
+	chassi varchar(30),
+	primary key(id_carro));
+				
+create table solicita
+	 (id_cli int,
+	 id_carro int,
+	 dataSolic date,
+	 dataRetorno date,
+	 primary key(id_cli, id_carro),
+	 foreign key(id_cli) references cliente,
+	 foreign key (id_carro) references carro);
+
+create table cede
+	(id_cli int,
+	id_carro int,
+	dataEmprestimo date,
+	primary key(id_cli, id_carro),
+	foreign key(id_cli) references cliente,
+	foreign key(id_carro) references carro);
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+				 

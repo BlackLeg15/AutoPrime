@@ -30,5 +30,5 @@ public class Carro extends Veiculo {
 	public void setOpcionais(String opcionais) {
 		this.opcionais = opcionais;
 	}
-	
+	//alteração linha
 }

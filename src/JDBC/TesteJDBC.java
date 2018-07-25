@@ -8,9 +8,6 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class TesteJDBC {
-	public static void main(String[] args) {
-		Connection c = openConnection();
-	}
 
 	public static Connection openConnection() {
 

@@ -2,20 +2,52 @@ package model.entidades;
 
 import java.util.Date;
 
-public class Pessoa {
-	public int id_Pessoa;
-	private String nome;
-	private String cpf;
-	private String rg;
-	private String sexo;
-	private Date dataNascimento;
-	private String rua;
-	private int numCasa;
-	private String bairro;
-	private String cidade;
-	private String estado;
-	private String telefone;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table (name = "Pessoa")
+public class Pessoa {
+	
+	@Id
+	@Column (name = "id_Pessoa")
+	public int id_Pessoa;
+	
+	@Column (name = "nome")
+	private String nome;
+	
+	@Column (name = "cpf")
+	private String cpf;
+	
+	@Column (name = "rg")
+	private String rg;
+	
+	@Column (name = "sexo")
+	private String sexo;
+	
+	@Column (name = "dataNasc")
+	private Date dataNascimento;
+	
+	@Column (name = "rua")
+	private String rua;
+	
+	@Column (name = "numCasa")
+	private int numCasa;
+	
+	@Column (name = "bairro")
+	private String bairro;
+	
+	@Column (name = "cidade")
+	private String cidade;
+	
+	@Column (name = "estado")
+	private String estado;
+	
+	@Column (name = "telefone")
+	private String telefone;
+	
 	public Pessoa(String nome, String cpf, String rg, String sexo, Date dataNascimento, String rua, int numCasa,
 			String bairro, String cidade, String estado, String telefone) {
 		this.nome = nome;
@@ -118,5 +150,5 @@ public class Pessoa {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	
+
 }

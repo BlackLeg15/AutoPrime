@@ -18,7 +18,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaAlunosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaAlunosController">
    <children>
       <HBox prefHeight="25.0" prefWidth="1202.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
          <children>
@@ -53,7 +53,7 @@
                <children>
                   <Pane minWidth="300.0" prefHeight="477.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button layoutX="182.0" layoutY="138.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="390.0" prefWidth="331.0" styleClass="botao-principal" stylesheets="@Style.css" />
+                        <Button layoutX="182.0" layoutY="138.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="390.0" prefWidth="331.0" styleClass="botao-principal" />
                         <ImageView disable="true" fitHeight="181.0" fitWidth="152.0" layoutX="269.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@image/icons/Aluno_Add.png" />

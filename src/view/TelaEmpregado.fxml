@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaAlunosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaAlunosController">
    <children>
       <HBox prefHeight="25.0" prefWidth="1202.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
          <children>
@@ -40,7 +40,7 @@
                   <Menu mnemonicParsing="false" text="Ajuda">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Sobre" />
-                        <MenuItem mnemonicParsing="false" text="Ajuda Scout" />
+                        <MenuItem mnemonicParsing="false" text="Ajuda" />
                      </items>
                   </Menu>
                </menus>
@@ -53,22 +53,22 @@
                <children>
                   <Pane minWidth="300.0" prefHeight="477.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button layoutX="66.0" layoutY="53.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="152.0" prefWidth="152.0" styleClass="botao-principal" stylesheets="@Style.css" />
+                        <Button layoutX="66.0" layoutY="53.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="152.0" prefWidth="152.0" styleClass="botao-principal" />
                         <ImageView disable="true" fitHeight="119.0" fitWidth="129.0" layoutX="83.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Images/clienteAdd.png" />
+                              <Image url="@Images/clienteAdd.png" />
                            </image>
                         </ImageView>
                         <Button layoutX="279.0" layoutY="53.0" mnemonicParsing="false" prefHeight="152.0" prefWidth="152.0" />
                         <ImageView disable="true" fitHeight="119.0" fitWidth="129.0" layoutX="297.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Images/clienteEdit.png" />
+                              <Image url="@Images/clienteEdit.png" />
                            </image>
                         </ImageView>
                         <Button layoutX="489.0" layoutY="53.0" mnemonicParsing="false" prefHeight="152.0" prefWidth="152.0" />
                         <ImageView disable="true" fitHeight="119.0" fitWidth="129.0" layoutX="506.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Images/excluir_cli.png" />
+                              <Image url="@Images/excluir_cli.png" />
                            </image>
                         </ImageView>
                      </children>

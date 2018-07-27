@@ -44,7 +44,7 @@
                   <Menu mnemonicParsing="false" text="Ajuda">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Sobre" />
-                        <MenuItem mnemonicParsing="false" text="Ajuda Scout" />
+                        <MenuItem mnemonicParsing="false" text="Ajuda" />
                      </items>
                   </Menu>
                </menus>
@@ -82,7 +82,7 @@
                         <Label layoutX="375.0" layoutY="279.0" text="Nº" />
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="515.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Images/cliente.png" />
+                              <Image url="@Images/cliente.png" />
                            </image>
                         </ImageView>
                         <Label layoutX="55.0" layoutY="81.0" text="Nome" />

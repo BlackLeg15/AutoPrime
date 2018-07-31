@@ -10,32 +10,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="589.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #F5DEB3;">
+      <AnchorPane prefHeight="589.0" prefWidth="480.0" style="-fx-background-color: #F5DEB3;">
          <children>
-            <AnchorPane layoutX="347.0" layoutY="32.0" prefHeight="338.0" prefWidth="325.0" style="-fx-background-color: #A52A2A;">
+            <AnchorPane layoutX="21.0" layoutY="188.0" prefHeight="379.0" prefWidth="438.0" style="-fx-background-color: #A52A2A;">
                <children>
-                  <TextField focusTraversable="false" layoutX="46.0" layoutY="95.0" prefHeight="27.0" prefWidth="241.0" promptText="Login" />
-                  <PasswordField layoutX="46.0" layoutY="152.0" prefHeight="27.0" prefWidth="241.0" promptText="Senha" style="-fx-background-color: #FFF5EE;">
+                  <TextField focusTraversable="false" layoutX="99.0" layoutY="120.0" prefHeight="27.0" prefWidth="241.0" promptText="Login" />
+                  <PasswordField layoutX="99.0" layoutY="182.0" prefHeight="27.0" prefWidth="241.0" promptText="Senha" style="-fx-background-color: #FFF5EE;">
                      <effect>
                         <Reflection topOpacity="0.05" />
                      </effect>
                   </PasswordField>
-                  <Button layoutX="46.0" layoutY="230.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="241.0" style="-fx-background-color: #FF6347;" text="Entrar" textAlignment="CENTER" textFill="#fffdfd" />
-                  <Label layoutX="119.0" layoutY="29.0" prefHeight="17.0" prefWidth="65.0" text="Sign in" textFill="#fcf7f7">
+                  <Button layoutX="99.0" layoutY="278.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="241.0" style="-fx-background-color: #FF6347;" text="Entrar" textAlignment="CENTER" textFill="#fffdfd" />
+                  <Label layoutX="187.0" layoutY="50.0" prefHeight="17.0" prefWidth="65.0" text="Sign in" textFill="#fcf7f7">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
                </children>
             </AnchorPane>
-            <Label layoutX="63.0" layoutY="167.0" prefHeight="40.0" prefWidth="241.0" text="Locadora AutoPrime" textFill="#d72a2a">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="126.0" fitWidth="217.0" layoutX="66.0" layoutY="40.0" opacity="0.81">
+            <ImageView fitHeight="126.0" fitWidth="217.0" layoutX="132.0" layoutY="24.0" opacity="0.81">
                <image>
                   <Image url="@Images/Logo.png" />
                </image>

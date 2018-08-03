@@ -23,24 +23,31 @@
          <children>
             <MenuBar prefHeight="25.0" prefWidth="478.0" styleClass="menu-padrao" HBox.hgrow="ALWAYS">
                <menus>
-                  <Menu mnemonicParsing="false" text="Menu">
+                  <Menu mnemonicParsing="false" text="Clientes">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Cadastrar cliente" />
                         <MenuItem mnemonicParsing="false" text="Editar cliente" />
-                        <MenuItem mnemonicParsing="false" text="Excluir cliente" />
+                        <MenuItem mnemonicParsing="false" text="Remover cliente" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Funcionarios">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Cadastrar funcionario" />
+                        <MenuItem mnemonicParsing="false" text="Editar funcionario" />
+                        <MenuItem mnemonicParsing="false" text="Remover funcionario" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Veiculos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Cadastrar veiculo" />
+                        <MenuItem mnemonicParsing="false" text="Editar veiculo" />
+                        <MenuItem mnemonicParsing="false" text="Remover veiculo" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Relatorio">
+                     <items>
                         <MenuItem mnemonicParsing="false" text="Gerar Relatorio" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Ferramentas">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Gerar relatórios" />
-                        <MenuItem mnemonicParsing="false" text="Pesquisar cliente" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Ajuda">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Sobre" />
-                        <MenuItem mnemonicParsing="false" text="Ajuda" />
+                        <MenuItem mnemonicParsing="false" text="Relatorios cadastrados" />
                      </items>
                   </Menu>
                </menus>
@@ -53,26 +60,26 @@
                <children>
                   <Pane minWidth="300.0" prefHeight="477.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button layoutX="125.0" layoutY="89.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="214.0" prefWidth="220.0" styleClass="botao-principal" />
-                        <ImageView disable="true" fitHeight="152.0" fitWidth="152.0" layoutX="157.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="96.0" layoutY="88.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="166.0" prefWidth="203.0" styleClass="botao-principal" />
+                        <ImageView disable="true" fitHeight="122.0" fitWidth="122.0" layoutX="137.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/clienteAdd.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="439.0" layoutY="88.0" mnemonicParsing="false" prefHeight="214.0" prefWidth="213.0" />
-                        <ImageView disable="true" fitHeight="152.0" fitWidth="152.0" layoutX="470.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="400.0" layoutY="88.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="203.0" />
+                        <ImageView disable="true" fitHeight="122.0" fitWidth="134.0" layoutX="441.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/clienteEdit.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="125.0" layoutY="387.0" mnemonicParsing="false" prefHeight="214.0" prefWidth="220.0" />
-                        <ImageView disable="true" fitHeight="152.0" fitWidth="180.0" layoutX="159.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="92.0" layoutY="342.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="203.0" />
+                        <ImageView disable="true" fitHeight="122.0" fitWidth="142.0" layoutX="133.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/excluir_cli.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="439.0" layoutY="387.0" mnemonicParsing="false" prefHeight="214.0" prefWidth="213.0" />
-                        <ImageView fitHeight="180.0" fitWidth="173.0" layoutX="459.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="399.0" layoutY="342.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="203.0" />
+                        <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="437.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/relatorio_icon.png" />
                            </image>

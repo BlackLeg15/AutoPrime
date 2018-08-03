@@ -1,21 +1,21 @@
 package controller;
 
+import model.Caminho;
+import model.Especificacoes;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import model.Caminho;
-import model.Especificacoes;
 
 public class MainController extends Application {
-	
+
     @Override
     public void start (Stage primaryStage) throws Exception
     {
-        //Esta classe chama a construção da primeira interface do software Scout, que desencadeia nas outras chamadas
-         // de interfaces utilizando a tecnologia JavaFx
-         
+        /**Esta classe chama a construção da primeira interface do software Scout, que desencadeia nas outras chamadas
+         * de interfaces utilizando a tecnologia JavaFx
+         */
 
         Parent root = FXMLLoader.load(getClass().getResource(Caminho.telaLogin));
 

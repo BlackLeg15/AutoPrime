@@ -57,7 +57,6 @@ public class TelaLoginController {
              mensagemErro.setVisible(true);
              mensagemErro.setText("Login e/ou senha necessário(s)");
          }
-    	
     }
 
     @FXML

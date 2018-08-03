@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaAlunosController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <children>
       <HBox prefHeight="25.0" prefWidth="1202.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
          <children>
@@ -28,13 +28,13 @@
                         <MenuItem mnemonicParsing="false" text="Cadastrar cliente" />
                         <MenuItem mnemonicParsing="false" text="Editar cliente" />
                         <MenuItem mnemonicParsing="false" text="Excluir cliente" />
-                        <MenuItem mnemonicParsing="false" text="Gerar Relatorio" />
+                        <MenuItem mnemonicParsing="false" text="Gerar Relatorio" visible="false" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Ferramentas">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Gerar relatórios" />
-                        <MenuItem mnemonicParsing="false" text="Pesquisar aluno" />
+                        <MenuItem mnemonicParsing="false" text="Gerar relatórios" visible="false" />
+                        <MenuItem mnemonicParsing="false" text="Pesquisar cliente" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Ajuda">
@@ -53,22 +53,28 @@
                <children>
                   <Pane minWidth="300.0" prefHeight="477.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button layoutX="66.0" layoutY="53.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="152.0" prefWidth="152.0" styleClass="botao-principal" />
-                        <ImageView disable="true" fitHeight="119.0" fitWidth="129.0" layoutX="83.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="91.0" layoutY="83.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="214.0" prefWidth="220.0" styleClass="botao-principal" />
+                        <ImageView disable="true" fitHeight="152.0" fitWidth="152.0" layoutX="123.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/clienteAdd.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="279.0" layoutY="53.0" mnemonicParsing="false" prefHeight="152.0" prefWidth="152.0" />
-                        <ImageView disable="true" fitHeight="119.0" fitWidth="129.0" layoutX="297.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="405.0" layoutY="82.0" mnemonicParsing="false" prefHeight="214.0" prefWidth="213.0" />
+                        <ImageView disable="true" fitHeight="152.0" fitWidth="152.0" layoutX="436.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/clienteEdit.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="489.0" layoutY="53.0" mnemonicParsing="false" prefHeight="152.0" prefWidth="152.0" />
-                        <ImageView disable="true" fitHeight="119.0" fitWidth="129.0" layoutX="506.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                        <Button layoutX="91.0" layoutY="381.0" mnemonicParsing="false" prefHeight="214.0" prefWidth="220.0" />
+                        <ImageView disable="true" fitHeight="152.0" fitWidth="180.0" layoutX="125.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/excluir_cli.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="405.0" layoutY="381.0" mnemonicParsing="false" prefHeight="214.0" prefWidth="213.0" />
+                        <ImageView fitHeight="180.0" fitWidth="173.0" layoutX="425.0" layoutY="409.0" opacity="0.54" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/relatorio_icon.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -78,7 +84,7 @@
                      <children>
                         <HBox alignment="CENTER" prefHeight="0.0" prefWidth="106.0">
                            <children>
-                              <TextField fx:id="campoPesquisa" prefHeight="25.0" prefWidth="371.0" text="Pesquisar cliente..." HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="campoPesquisa" prefHeight="25.0" prefWidth="371.0" promptText="Pesquisar cliente..." HBox.hgrow="ALWAYS" />
                               <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" text="Ok" />
                            </children>
                            <padding>

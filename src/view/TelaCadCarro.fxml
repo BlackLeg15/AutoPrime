@@ -21,9 +21,9 @@
    <children>
       <HBox prefHeight="25.0" prefWidth="1202.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
          <children>
-            <MenuBar prefHeight="25.0" prefWidth="478.0" style="-fx-background-color: #B22222;" styleClass="menu-padrao" HBox.hgrow="ALWAYS">
+            <MenuBar prefHeight="25.0" prefWidth="478.0" styleClass="menu-padrao" HBox.hgrow="ALWAYS">
                <menus>
-                  <Menu mnemonicParsing="false" style="-fx-background-color: #B22222;" text="Menu">
+                  <Menu mnemonicParsing="false" text="Menu">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Cadastrar Veiculo" />
                         <MenuItem mnemonicParsing="false" text="Editar veiculo" />

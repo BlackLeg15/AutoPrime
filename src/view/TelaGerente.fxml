@@ -15,9 +15,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaGerenteController">
    <children>
       <HBox prefHeight="25.0" prefWidth="1202.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
          <children>
@@ -60,25 +59,25 @@
                <children>
                   <Pane minWidth="300.0" prefHeight="477.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button layoutX="96.0" layoutY="88.0" mnemonicParsing="false" onAction="#cliqueAlunosCadastro" prefHeight="166.0" prefWidth="203.0" styleClass="botao-principal" />
+                        <Button fx:id="insereFunc" layoutX="94.0" layoutY="87.0" mnemonicParsing="false" onAction="#insereFunc" prefHeight="166.0" prefWidth="203.0" />
                         <ImageView disable="true" fitHeight="122.0" fitWidth="122.0" layoutX="137.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/clienteAdd.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="400.0" layoutY="88.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="203.0" />
+                        <Button fx:id="editaFunc" layoutX="400.0" layoutY="88.0" mnemonicParsing="false" onAction="#editaFunc" prefHeight="166.0" prefWidth="203.0" />
                         <ImageView disable="true" fitHeight="122.0" fitWidth="134.0" layoutX="441.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/clienteEdit.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="92.0" layoutY="342.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="203.0" />
+                        <Button fx:id="removeFunc" layoutX="92.0" layoutY="342.0" mnemonicParsing="false" onAction="#removeFunc" prefHeight="166.0" prefWidth="203.0" />
                         <ImageView disable="true" fitHeight="122.0" fitWidth="142.0" layoutX="133.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/excluir_cli.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="399.0" layoutY="342.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="203.0" />
+                        <Button fx:id="gerarRelatorio" layoutX="399.0" layoutY="342.0" mnemonicParsing="false" onAction="#geraRelatorio" prefHeight="166.0" prefWidth="203.0" />
                         <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="437.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/relatorio_icon.png" />
@@ -101,7 +100,7 @@
                               <Insets bottom="25.0" top="25.0" />
                            </VBox.margin>
                         </HBox>
-                        <TableView fx:id="listaAlunos" prefHeight="492.0" prefWidth="440.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+                        <TableView fx:id="listaClientes" prefHeight="492.0" prefWidth="440.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
                           <columns>
                             <TableColumn fx:id="colunaNome" editable="false" prefWidth="75.0" text="Nome" />
                             <TableColumn fx:id="colunaCPF" editable="false" prefWidth="75.0" sortable="false" text="CPF" />
@@ -122,15 +121,5 @@
             </HBox>
          </children>
       </VBox>
-      <Button fx:id="botaoVoltar" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" mnemonicParsing="false" onAction="#cliqueBotaoVoltar" prefHeight="30.0" prefWidth="85.0" styleClass="botao-voltar" text="Voltar" textAlignment="CENTER" textFill="#070707" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="25.0">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="botaoEditar" alignment="CENTER" contentDisplay="CENTER" layoutX="699.0" layoutY="640.0" mnemonicParsing="false" onAction="#cliqueBotaoEditar" prefHeight="30.0" prefWidth="85.0" styleClass="botao-voltar" text="Editar" textAlignment="CENTER" textFill="#0f0f0f" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="416.0">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

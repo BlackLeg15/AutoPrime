@@ -10,19 +10,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="611.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<AnchorPane prefHeight="611.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaLoginController">
    <children>
       <AnchorPane prefHeight="611.0" prefWidth="472.0" style="-fx-background-color: #F5DEB3;">
          <children>
             <AnchorPane layoutX="16.0" layoutY="191.0" prefHeight="402.0" prefWidth="438.0" style="-fx-background-color: #A52A2A;">
                <children>
-                  <TextField focusTraversable="false" layoutX="92.0" layoutY="134.0" prefHeight="27.0" prefWidth="254.0" promptText="Login" />
-                  <PasswordField layoutX="92.0" layoutY="188.0" prefHeight="27.0" prefWidth="254.0" promptText="Senha" style="-fx-background-color: #FFF5EE;">
+                  <TextField fx:id="campoLogin" focusTraversable="false" layoutX="92.0" layoutY="134.0" prefHeight="27.0" prefWidth="254.0" promptText="Login" />
+                  <PasswordField fx:id="campoSenha" layoutX="92.0" layoutY="188.0" prefHeight="27.0" prefWidth="254.0" promptText="Senha" style="-fx-background-color: #FFF5EE;">
                      <effect>
                         <Reflection topOpacity="0.05" />
                      </effect>
                   </PasswordField>
-                  <Button layoutX="92.0" layoutY="285.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="254.0" style="-fx-background-color: #FF6347;" text="Entrar" textAlignment="CENTER" textFill="#fffdfd" />
+                  <Button defaultButton="true" layoutX="92.0" layoutY="285.0" mnemonicParsing="false" onAction="#cliqueBotaoEntrar" prefHeight="27.0" prefWidth="254.0" style="-fx-background-color: #FF6347;" text="Entrar" textAlignment="CENTER" textFill="WHITE" />
                   <Label layoutX="187.0" layoutY="57.0" prefHeight="17.0" prefWidth="65.0" text="Sign in" textFill="#fcf7f7">
                      <font>
                         <Font size="18.0" />

@@ -3,45 +3,54 @@ package controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
-import model.ChangeScreen;
-import model.Caminho;
-import model.ChangeScreen;
-import model.Especificacoes;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 public class TelaGerenteController {
 
-	@FXML
-	private Button insereFunc;
+    @FXML
+    private Button insereFunc;
 
-	@FXML
-	private Button editaFunc;
-	
-	@FXML
-	void insereFunc(ActionEvent event) throws Exception {
-		ChangeScreen change = new ChangeScreen();
+    @FXML
+    private Button editaFunc;
 
-		Stage ofertasStage = change.change(event, Caminho.telaCadFunc, null, true);
-		ofertasStage.show();
-	}
+    @FXML
+    private Button removeFunc;
 
-	@FXML
-	void editaFunc(ActionEvent event) throws Exception {
-		ChangeScreen change = new ChangeScreen();
+    @FXML
+    private Button gerarRelatorio;
 
-		Stage ofertasStage = change.change(event, Caminho.telaRelatorios, null, true);
-		ofertasStage.show();
-	}
+    @FXML
+    private TextField campoPesquisa;
 
-	@FXML
-	void initialize() {
-		/*if (ArrayLists.tobArray.isEmpty())
-			botaoInsereCli.setDisable(true);
-		else
-			botaoInsereCli.setDisable(false);
-		if (ArrayLists.alunoArray.isEmpty() && ArrayLists.alunoAptoArray.isEmpty())
-			botaoEditaCli.setDisable(true);
-		else
-			botaoEditaCli.setDisable(false);*/
-	}
+    @FXML
+    private TableView<?> listaClientes;
+
+    @FXML
+    private TableColumn<?, ?> colunaNome;
+
+    @FXML
+    private TableColumn<?, ?> colunaCPF;
+
+    @FXML
+    void editaFunc(ActionEvent event) {
+
+    }
+
+    @FXML
+    void geraRelatorio(ActionEvent event) {
+
+    }
+
+    @FXML
+    void insereFunc(ActionEvent event) {
+
+    }
+
+    @FXML
+    void removeFunc(ActionEvent event) {
+
+    }
+
 }

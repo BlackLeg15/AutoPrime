@@ -1,14 +1,11 @@
 package controller;
 
-import java.net.URL; 
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import model.Caminho;
 import model.ChangeScreen;
 import model.Especificacoes;
@@ -40,8 +37,4 @@ public class TelaLoginController {
 	     }
     }
     
-     @FXML
-    void initialize() {
-    	
-    }
 }

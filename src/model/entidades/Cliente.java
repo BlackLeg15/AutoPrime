@@ -12,10 +12,10 @@ import javax.persistence.Table;
 public class Cliente extends Pessoa {
 
 	@Id
-	@Column(name = "id_PessoaCliente")
-	private int id_PessoaCliente;
+	@Column(name = "IDPessoaCliente")
+	private int idPessoaCliente;
 
-	@Column(name = "cnh")
+	@Column(name = "CNH")
 	private String cnh;
 
 	public Cliente(String nome, String cpf, String rg, String sexo, Date dataNascimento, String rua, int numCasa,
@@ -32,12 +32,9 @@ public class Cliente extends Pessoa {
 		this.cnh = cnh;
 	}
 
-	public int getId_Pessoa() {
-		return id_Pessoa;
-	}
-
-	public void setId_Pessoa(int id_Pessoa) {
-		this.id_Pessoa = id_Pessoa;
+	@Override
+	public String toString() {
+		return "Cliente [idPessoaCliente=" + idPessoaCliente + ", cnh=" + cnh + "]";
 	}
 
 }

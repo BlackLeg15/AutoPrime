@@ -12,19 +12,19 @@ import javax.persistence.Table;
 public class Funcionario extends Pessoa{
 	
 	@Id
-	@Column (name = "id_PessoaFunc")
-	private int id_PessoaFunc;
+	@Column (name = "IDPessoaFunc")
+	private int idPessoaFunc;
 	
-	@Column (name = "cargo")
+	@Column (name = "Cargo")
 	private String cargo;
 	
-	@Column (name = "cargaHorSem")
+	@Column (name = "CargaHorSem")
 	private byte cargaHorSem;
 	
-	@Column (name = "salario")
+	@Column (name = "Salario")
 	private float salario;
 	
-	@Column (name = "dataEntrada")
+	@Column (name = "DataEntrada")
 	private Date dataEntrada;
 	
 	public Funcionario(String nome, String cpf, String rg, String sexo, Date dataNascimento, String rua, int numCasa,
@@ -69,12 +69,10 @@ public class Funcionario extends Pessoa{
 		this.dataEntrada = dataEntrada;
 	}
 
-	public int getId_PessoaFunc() {
-		return id_PessoaFunc;
-	}
-
-	public void setId_PessoaFunc(int id_PessoaFunc) {
-		this.id_PessoaFunc = id_PessoaFunc;
+	@Override
+	public String toString() {
+		return "Funcionario [idPessoaFunc=" + idPessoaFunc + ", cargo=" + cargo + ", cargaHorSem=" + cargaHorSem
+				+ ", salario=" + salario + ", dataEntrada=" + dataEntrada + "]";
 	}
 	
 }

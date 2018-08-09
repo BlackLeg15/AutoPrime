@@ -9,43 +9,43 @@ import javax.persistence.Table;
 
 @Entity
 @Table (name = "Pessoa")
-public class Pessoa {
+public abstract class Pessoa {
 	
 	@Id
-	@Column (name = "id_Pessoa")
-	public int id_Pessoa;
+	@Column (name = "IDPessoa")
+	public int idPessoa;
 	
-	@Column (name = "nome")
+	@Column (name = "Nome")
 	private String nome;
 	
-	@Column (name = "cpf")
+	@Column (name = "CPF")
 	private String cpf;
 	
-	@Column (name = "rg")
+	@Column (name = "RG")
 	private String rg;
 	
-	@Column (name = "sexo")
+	@Column (name = "Sexo")
 	private String sexo;
 	
-	@Column (name = "dataNasc")
+	@Column (name = "DataNasc")
 	private Date dataNascimento;
 	
-	@Column (name = "rua")
+	@Column (name = "Rua")
 	private String rua;
 	
-	@Column (name = "numCasa")
+	@Column (name = "NumCasa")
 	private int numCasa;
 	
-	@Column (name = "bairro")
+	@Column (name = "Bairro")
 	private String bairro;
 	
-	@Column (name = "cidade")
+	@Column (name = "Cidade")
 	private String cidade;
 	
-	@Column (name = "estado")
+	@Column (name = "Estado")
 	private String estado;
 	
-	@Column (name = "telefone")
+	@Column (name = "Telefone")
 	private String telefone;
 	
 	public Pessoa(String nome, String cpf, String rg, String sexo, Date dataNascimento, String rua, int numCasa,
@@ -149,6 +149,13 @@ public class Pessoa {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+
+	@Override
+	public String toString() {
+		return "Pessoa [idPessoa=" + idPessoa + ", nome=" + nome + ", cpf=" + cpf + ", rg=" + rg + ", sexo=" + sexo
+				+ ", dataNascimento=" + dataNascimento + ", rua=" + rua + ", numCasa=" + numCasa + ", bairro=" + bairro
+				+ ", cidade=" + cidade + ", estado=" + estado + ", telefone=" + telefone + "]";
 	}
 
 }

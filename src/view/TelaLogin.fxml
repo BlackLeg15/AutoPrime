@@ -28,6 +28,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
+                  <Label fx:id="mensagemErro" layoutX="64.0" layoutY="327.0" prefHeight="27.0" prefWidth="254.0" />
                </children>
             </AnchorPane>
             <ImageView fitHeight="126.0" fitWidth="217.0" layoutX="98.0" layoutY="14.0" opacity="0.81">

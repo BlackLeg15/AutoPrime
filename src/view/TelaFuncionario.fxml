@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="1060.0" prefHeight="690.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaFuncionarioController">
    <children>
       <HBox prefHeight="25.0" prefWidth="1202.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
          <children>
@@ -53,27 +53,27 @@
                <children>
                   <Pane minWidth="300.0" prefHeight="477.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button layoutX="117.0" layoutY="107.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="131.0" />
+                        <Button fx:id="insereCli" layoutX="117.0" layoutY="107.0" mnemonicParsing="false" onAction="#insereCli" prefHeight="110.0" prefWidth="131.0" />
                         <ImageView disable="true" fitHeight="88.0" fitWidth="88.0" layoutX="142.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/clienteAdd.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="293.0" layoutY="107.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="131.0" />
+                        <Button fx:id="editaCli" layoutX="293.0" layoutY="107.0" mnemonicParsing="false" onAction="#editaCli" prefHeight="110.0" prefWidth="131.0" />
                         <ImageView disable="true" fitHeight="88.0" fitWidth="91.0" layoutX="313.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/clienteEdit.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="476.0" layoutY="106.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="131.0" />
+                        <Button fx:id="removeCli" layoutX="476.0" layoutY="106.0" mnemonicParsing="false" onAction="#removeCli" prefHeight="110.0" prefWidth="131.0" />
                         <ImageView disable="true" fitHeight="88.0" fitWidth="110.0" layoutX="497.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/excluir_cli.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="117.0" layoutY="462.0" mnemonicParsing="false" prefHeight="96.0" prefWidth="131.0" />
-                        <Button layoutX="476.0" layoutY="462.0" mnemonicParsing="false" prefHeight="96.0" prefWidth="131.0" />
-                        <Button layoutX="293.0" layoutY="462.0" mnemonicParsing="false" prefHeight="96.0" prefWidth="131.0" />
+                        <Button fx:id="insereCarro" layoutX="117.0" layoutY="462.0" mnemonicParsing="false" onAction="#insereCarro" prefHeight="96.0" prefWidth="131.0" />
+                        <Button fx:id="removeCarro" layoutX="476.0" layoutY="462.0" mnemonicParsing="false" onAction="#removeCarro" prefHeight="96.0" prefWidth="131.0" />
+                        <Button fx:id="editaCarro" layoutX="293.0" layoutY="462.0" mnemonicParsing="false" onAction="#editaCarro" prefHeight="96.0" prefWidth="131.0" />
                         <Separator layoutX="1.0" layoutY="332.0" prefHeight="0.0" prefWidth="698.0" />
                         <Label layoutX="273.0" layoutY="373.0" prefHeight="21.0" prefWidth="154.0" text="Gerenciar Veiculos">
                            <font>
@@ -117,7 +117,7 @@
                               <Insets bottom="25.0" top="25.0" />
                            </VBox.margin>
                         </HBox>
-                        <TableView fx:id="listaAlunos" prefHeight="492.0" prefWidth="440.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+                        <TableView fx:id="listaCli" prefHeight="492.0" prefWidth="440.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
                           <columns>
                             <TableColumn fx:id="colunaNome" editable="false" prefWidth="75.0" text="Nome" />
                             <TableColumn fx:id="colunaCPF" editable="false" prefWidth="75.0" sortable="false" text="CPF" />
